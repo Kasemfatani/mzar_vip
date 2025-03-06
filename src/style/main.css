@@ -1141,6 +1141,11 @@ footer .footer-cont .social {
   align-items: center;
   gap: 24px;
 }
+@media screen and (max-width: 767px) {
+  .climp .climp-cont {
+    flex-direction: column;
+  }
+}
 .climp .climp-cont .text {
   width: 100%;
 }
