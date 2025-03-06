@@ -17,7 +17,7 @@ export default function BookSec({ data }) {
                                     <div className="pp"><Image src={sar} alt="Mazar" className="img" width={30} height={33} /><span>600</span></div>
                                     <p>Per group up to 4 persons</p>
                                 </div>
-                                <Link href={`/https://www.mzarapp.com/book-path?id=` + data.id} target='_blank' className="btn-hero-header">Book now</Link>
+                                <Link href={`https://www.mzarapp.com/book-path?id=` + data.id} target='_blank' className="btn-hero-header">Book now</Link>
                             </div>
                         </div>
                     </div>
