@@ -1,0 +1,16 @@
+// // Abstracts
+@import "sass/abstracts/variables";
+@import "sass/abstracts/mixins";
+@import "../style/sass/base/fonts";
+
+// // Base
+@import "sass/base/base";
+
+// //Components
+
+// //Layout
+@import "sass/components/index";
+@import "sass/components/daycontent";
+@import "sass/components/loading";
+@import "sass/components/details";
+@import "sass/components/places";

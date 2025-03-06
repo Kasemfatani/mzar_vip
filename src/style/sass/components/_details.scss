@@ -1,0 +1,98 @@
+.main-details {
+    margin-top: -10px;
+    background-color: #FFF5FF;
+    padding: 35px 0;
+    .main-details-cont {
+        display: flex;
+        gap: 20px;
+
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+        }
+
+        .l-side {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            @media screen and (max-width: 767px) {
+                width: 100%;
+            }
+            .coll-cont{
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                .upper{
+                    display: flex;
+                    align-items: center;
+                    gap:4px;
+                    img{
+                        width: 24px;
+                        height: 24px;
+                        object-fit: cover;
+                    }
+                    h3{
+                        font-size: 24px;
+                        font-weight: 600;
+                        color: #222;
+                    }
+                }
+                .lower{
+                    p{
+                        color: #444444;
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+        .r-side {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .fac-cont{
+                width: 100%;
+                h2{
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: #222;
+                    margin-bottom: 18px;
+                }
+                .grid-cont{
+                    display: grid;
+                    width: 100%;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 8px;
+                }
+                .fac{
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    img{
+                        width: 24px;
+                        height: 24px;
+                        object-fit: cover;
+                    }
+                    span{
+                        color: #0A0A0A;
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                }
+                .act-cont{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                }
+            }
+            @media screen and (max-width: 767px) {
+                width: 100%;
+            }
+
+        }
+    }
+}

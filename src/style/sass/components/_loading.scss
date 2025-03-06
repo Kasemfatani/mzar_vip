@@ -1,0 +1,58 @@
+.loading-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+position: relative;
+    /* From Uiverse.io by terenceodonoghue */
+    .container {
+        align-items: center;
+        display: flex;
+        gap: 0.625em;
+        justify-content: center;
+    }
+
+    .container span {
+        border-radius: 50%;
+        height: 1.5em;
+        width: 1.5em;
+    }
+
+    .container span::before {
+        content: "";
+        display: block;
+        border-radius: inherit;
+        height: inherit;
+        width: inherit;
+        background-color: inherit;
+        animation: ripple 1.8s ease-out infinite;
+        animation-delay: inherit;
+        z-index: -1;
+    }
+
+    .container span:nth-of-type(1) {
+        background-color: $main;
+    }
+
+    .container span:nth-of-type(2) {
+        background-color: $sec;
+        animation-delay: 0.2s;
+    }
+
+    .container span:nth-of-type(3) {
+        background-color: #714D02;
+        animation-delay: 0.4s;
+    }
+
+    @keyframes ripple {
+        from {
+            opacity: 1;
+            transform: scale(0);
+        }
+
+        to {
+            opacity: 0;
+            transform: scale(3);
+        }
+    }
+}

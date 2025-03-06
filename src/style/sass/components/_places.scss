@@ -1,0 +1,48 @@
+.places{
+    background-color: #FFF5FF;
+    padding: 45px 0;
+    .grid-cont{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        @media screen and (max-width: 767px) {
+            grid-template-columns: repeat(2, 1fr);
+            
+        }
+        @media screen and (max-width: 500px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .place{
+            padding: 24px 16px;
+            border-radius: 16px;
+            background-color: $white;
+            .img-cont{
+                width: 100%;
+                aspect-ratio: 355/235;
+                overflow: hidden;
+                border-radius: 16px;
+                margin-bottom: 16px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    -o-object-fit: cover;
+                    object-fit: cover;
+                }
+            }
+            .text{
+                h2{
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: #141414;
+                    margin-bottom: 8px;
+                }
+                p{
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #3C3C3C;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
