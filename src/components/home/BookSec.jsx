@@ -14,7 +14,13 @@ export default function BookSec({ data }) {
                         <div className="container m-auto">
                             <div className="nav-cont">
                                 <div className='price'>
-                                    <div className="pp"><Image src={sar} alt="Mazar" className="img" width={30} height={33} /><span>600</span></div>
+                                    <div className="pp">
+                                        <Image src={sar} alt="Mazar" className="img" width={30} height={33} /><span>600</span>
+                                        {/* old price */}
+                                        <div className="old-price">
+                                            <Image src={sar} alt="Mazar" className="img" width={30} height={33} /><span>720</span>
+                                        </div>
+                                    </div>
                                     <p>Per group up to 4 persons</p>
                                 </div>
                                 <Link href={`https://www.mzarapp.com/book-path?id=` + data.id} target='_blank' className="btn-hero-header">Book now</Link>
@@ -35,7 +41,7 @@ export default function BookSec({ data }) {
                 <div className="s-shash"></div>
                 <div className="t-shash"></div>
             </div>
-           
+
         </div>
     );
 }
