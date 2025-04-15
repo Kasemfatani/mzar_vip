@@ -9,7 +9,6 @@ export default function BookSec({ data }) {
     return (
         <div className="hero book-sec">
             <div className="relative">
-                <div className="overlay" >
                     <div className="nav-bar">
                         <div className="container m-auto">
                             <div className="nav-cont">
@@ -30,6 +29,7 @@ export default function BookSec({ data }) {
                             </div>
                         </div>
                     </div>
+                <div className="overlay" >
                     <div className="container m-auto body-container">
                         <div className="hero-body">
                             <h1>Can’t wait to see you</h1>

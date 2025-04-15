@@ -14,7 +14,6 @@ import { API_BASE_URL } from '@/lib/apiConfig';
 export default function Home() {
     const [loading, setLoading] = useState(true)
     const [data, setData] = useState([]);
-
     useEffect(() => {
         setLoading(true)
         const getHomeData = async () => {
@@ -46,13 +45,12 @@ export default function Home() {
                         <DayContent data={data} />
                         <Climp />
                         <Kornaisha />
+                        <BookSec  data={data}/>
                         <MainDetails data={data} />
                         <Places data={data} />
-                        <BookSec  data={data}/>
                         <Tips />
                     </>
             }
-
         </main>
     );
 }

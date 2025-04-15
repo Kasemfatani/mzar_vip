@@ -698,57 +698,84 @@ ul.breadcrumb li a:hover {
 
 .book-sec {
   background-color: var(--main-color);
-  height: 450px;
+  height: unset;
+}
+.book-sec .f-shash,
+.book-sec .s-shash,
+.book-sec .t-shash {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .book-sec .f-shash,
+  .book-sec .s-shash,
+  .book-sec .t-shash {
+    display: block;
+  }
 }
 .book-sec .relative .overlay {
   position: relative;
+  display: none;
 }
-.book-sec .relative .overlay .nav-bar {
+@media screen and (max-width: 767px) {
+  .book-sec .relative .overlay {
+    display: block;
+  }
+}
+.book-sec .relative .nav-bar {
   background-color: var(--white-color);
   box-shadow: 0px 0px 7px rgba(50, 50, 50, 0.27);
 }
-.book-sec .relative .overlay .nav-bar .nav-cont .btn-hero-header {
+@media screen and (max-width: 767px) {
+  .book-sec .relative .nav-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+}
+.book-sec .relative .nav-bar .nav-cont .btn-hero-header {
   background-color: var(--main-color);
 }
-.book-sec .relative .overlay .nav-bar .nav-cont .btn-hero-header:hover {
+.book-sec .relative .nav-bar .nav-cont .btn-hero-header:hover {
   background-color: var(--white-color);
   color: var(--main-color);
 }
-.book-sec .relative .overlay .nav-bar .nav-cont .price {
+.book-sec .relative .nav-bar .nav-cont .price {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 @media screen and (max-width: 767px) {
-  .book-sec .relative .overlay .nav-bar .nav-cont .price {
+  .book-sec .relative .nav-bar .nav-cont .price {
     gap: 4px;
   }
 }
-.book-sec .relative .overlay .nav-bar .nav-cont .price .pp {
+.book-sec .relative .nav-bar .nav-cont .price .pp {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.book-sec .relative .overlay .nav-bar .nav-cont .price .pp img {
+.book-sec .relative .nav-bar .nav-cont .price .pp img {
   width: 30px;
   height: auto;
 }
 @media screen and (max-width: 767px) {
-  .book-sec .relative .overlay .nav-bar .nav-cont .price .pp img {
+  .book-sec .relative .nav-bar .nav-cont .price .pp img {
     width: 20px;
   }
 }
-.book-sec .relative .overlay .nav-bar .nav-cont .price .pp span {
+.book-sec .relative .nav-bar .nav-cont .price .pp span {
   font-size: 40px;
   font-weight: 700;
   color: #222;
 }
 @media screen and (max-width: 767px) {
-  .book-sec .relative .overlay .nav-bar .nav-cont .price .pp span {
+  .book-sec .relative .nav-bar .nav-cont .price .pp span {
     font-size: 24px;
   }
 }
-.book-sec .relative .overlay .nav-bar .nav-cont .price .pp .old-price {
+.book-sec .relative .nav-bar .nav-cont .price .pp .old-price {
   text-decoration: line-through;
   font-size: 18px;
   font-weight: 400;
@@ -758,58 +785,61 @@ ul.breadcrumb li a:hover {
   gap: 8px;
 }
 @media screen and (max-width: 767px) {
-  .book-sec .relative .overlay .nav-bar .nav-cont .price .pp .old-price {
+  .book-sec .relative .nav-bar .nav-cont .price .pp .old-price {
     font-size: 16px;
   }
 }
-.book-sec .relative .overlay .nav-bar .nav-cont .price .pp .old-price span {
+.book-sec .relative .nav-bar .nav-cont .price .pp .old-price span {
   font-size: 18px;
   font-weight: 600;
   color: #222;
 }
 @media screen and (max-width: 767px) {
-  .book-sec .relative .overlay .nav-bar .nav-cont .price .pp .old-price span {
+  .book-sec .relative .nav-bar .nav-cont .price .pp .old-price span {
     font-size: 16px;
   }
 }
-.book-sec .relative .overlay .nav-bar .nav-cont .price .pp .old-price img {
+.book-sec .relative .nav-bar .nav-cont .price .pp .old-price img {
   width: 20px;
   height: auto;
 }
-.book-sec .relative .overlay .nav-bar .nav-cont .price p {
+.book-sec .relative .nav-bar .nav-cont .price p {
   font-size: 16px;
   font-weight: 400;
   color: #222;
 }
 @media screen and (max-width: 767px) {
-  .book-sec .relative .overlay .nav-bar .nav-cont .price p {
+  .book-sec .relative .nav-bar .nav-cont .price p {
     font-size: 12px;
   }
 }
-.book-sec .relative .overlay .nav-bar .nav-cont .price .discount span {
+.book-sec .relative .nav-bar .nav-cont .price .discount span {
   font-size: 22px;
   font-weight: 700;
   color: var(--main-color);
 }
 @media screen and (max-width: 767px) {
-  .book-sec .relative .overlay .nav-bar .nav-cont .price .discount span {
+  .book-sec .relative .nav-bar .nav-cont .price .discount span {
     font-size: 18px;
   }
 }
-.book-sec .relative .overlay .hero-body h1 {
+.book-sec .relative .hero-body {
+  padding: 45px 0;
+}
+.book-sec .relative .hero-body h1 {
   font-size: 32px;
 }
 @media screen and (max-width: 767px) {
-  .book-sec .relative .overlay .hero-body h1 {
+  .book-sec .relative .hero-body h1 {
     font-size: 24px;
   }
 }
-.book-sec .relative .overlay .hero-body h2 {
+.book-sec .relative .hero-body h2 {
   font-size: 24px;
   font-weight: 500;
 }
 @media screen and (max-width: 767px) {
-  .book-sec .relative .overlay .hero-body h2 {
+  .book-sec .relative .hero-body h2 {
     font-size: 20px;
   }
 }
@@ -875,6 +905,11 @@ html {
 footer {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+  footer {
+    margin-bottom: 120px;
+  }
 }
 footer .footer-cont {
   display: flex;
