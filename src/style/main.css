@@ -786,6 +786,16 @@ ul.breadcrumb li a:hover {
     font-size: 12px;
   }
 }
+.book-sec .relative .overlay .nav-bar .nav-cont .price .discount span {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--main-color);
+}
+@media screen and (max-width: 767px) {
+  .book-sec .relative .overlay .nav-bar .nav-cont .price .discount span {
+    font-size: 18px;
+  }
+}
 .book-sec .relative .overlay .hero-body h1 {
   font-size: 32px;
 }

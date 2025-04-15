@@ -17,9 +17,10 @@
         transform-origin: top left;
         transform: rotate(7deg) translateX(-150px);
         z-index: 12;
+
         @media screen and (max-width: 767px) {
             height: 40px;
-            
+
         }
 
     }
@@ -34,9 +35,10 @@
         transform-origin: top right;
         transform: rotate(-8deg) translateX(150px);
         z-index: 13;
+
         @media screen and (max-width: 767px) {
             height: 40px;
-            
+
         }
 
     }
@@ -51,6 +53,7 @@
         transform-origin: top right;
         transform: rotate(-8deg) translateX(150px);
         z-index: 14;
+
         @media screen and (max-width: 767px) {
             height: 40px;
             bottom: 40px;
@@ -106,9 +109,10 @@
         img {
             height: 84px;
             width: auto;
+
             @media screen and (max-width: 767px) {
                 height: 50px;
-                
+
             }
         }
 
@@ -123,10 +127,12 @@
             font-weight: 600;
             color: $white;
             border: 2px solid $white;
-            &:hover{
+
+            &:hover {
                 background-color: $white;
                 color: $main;
             }
+
             @media screen and (max-width: 767px) {
                 height: 40px;
                 font-size: 16px;
@@ -188,32 +194,37 @@
                     font-size: 56px;
                     font-weight: 700;
                     margin-bottom: 8px;
+
                     @media screen and (max-width: 767px) {
                         font-size: 32px;
                         margin-bottom: 4px;
                     }
                 }
-                h2{
+
+                h2 {
                     font-size: 32px;
                     color: $white;
                     text-align: center;
                     margin: 0;
                     font-weight: 500;
                     margin-bottom: 32px;
+
                     @media screen and (max-width: 767px) {
                         font-size: 24px;
                         margin-bottom: 16px;
-                        
+
                     }
 
                 }
-                .hero-body-btns{
+
+                .hero-body-btns {
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     gap: 16px;
                     margin-bottom: 32px;
-                    .btn-book{
+
+                    .btn-book {
                         height: 52px;
                         padding: 0 24px;
                         border-radius: 30px;
@@ -224,10 +235,12 @@
                         font-weight: 600;
                         color: $white;
                         background-color: $main;
-                        &:hover{
+
+                        &:hover {
                             background-color: $white;
                             color: $main;
                         }
+
                         @media screen and (max-width: 767px) {
                             height: 40px;
                             font-size: 16px;
@@ -239,51 +252,64 @@
         }
     }
 }
-.book-sec{
+
+.book-sec {
     background-color: $main;
     height: 450px;
-    .relative{
-        .overlay{
+
+    .relative {
+        .overlay {
             position: relative;
-            .nav-bar{
+
+            .nav-bar {
                 background-color: $white;
                 box-shadow: 0px 0px 7px rgba(50, 50, 50, 0.27);
-                .nav-cont{
-                    .btn-hero-header{
+
+                .nav-cont {
+                    .btn-hero-header {
                         background-color: $main;
-                        &:hover{
+
+                        &:hover {
                             background-color: $white;
                             color: $main;
                         }
                     }
-                    .price{
+
+                    .price {
                         display: flex;
                         flex-direction: column;
                         gap: 8px;
+
                         @media screen and (max-width: 767px) {
                             gap: 4px;
                         }
-                        .pp{
+
+                        .pp {
                             display: flex;
                             align-items: center;
                             gap: 10px;
-                            img{
+
+                            img {
                                 width: 30px;
                                 height: auto;
+
                                 @media screen and (max-width: 767px) {
                                     width: 20px;
-                                    
+
                                 }
                             }
-                            span{
+
+                            span {
                                 font-size: 40px;
                                 font-weight: 700;
                                 color: #222;
+
                                 @media screen and (max-width: 767px) {
                                     font-size: 24px;
                                 }
                             }
-                            .old-price{
+
+                            .old-price {
                                 text-decoration: line-through;
                                 font-size: 18px;
                                 font-weight: 400;
@@ -291,46 +317,68 @@
                                 display: flex;
                                 align-items: center;
                                 gap: 8px;
+
                                 @media screen and (max-width: 767px) {
                                     font-size: 16px;
                                 }
-                                span{
+
+                                span {
                                     font-size: 18px;
                                     font-weight: 600;
                                     color: #222;
+
                                     @media screen and (max-width: 767px) {
                                         font-size: 16px;
                                     }
                                 }
-                                img{
+
+                                img {
                                     width: 20px;
                                     height: auto;
                                 }
                             }
                         }
-                        p{
+
+                        p {
                             font-size: 16px;
                             font-weight: 400;
                             color: #222;
+
                             @media screen and (max-width: 767px) {
                                 font-size: 12px;
-                                
+
+                            }
+                        }
+
+                        .discount {
+                            span {
+                                font-size: 22px;
+                                font-weight: 700;
+                                color: $main;
+
+                                @media screen and (max-width: 767px) {
+                                    font-size: 18px;
+                                }
                             }
                         }
                     }
                 }
             }
-            .hero-body{
-                h1{
+
+            .hero-body {
+                h1 {
                     font-size: 32px;
+
                     @media screen and (max-width: 767px) {
                         font-size: 24px;
-                        
+
                     }
                 }
-                h2{
+
+                h2 {
                     font-size: 24px;
                     font-weight: 500;
+
                     @media screen and (max-width: 767px) {
                         font-size: 20px;
                     }
@@ -340,6 +388,7 @@
         }
     }
 }
+
 p {
     text-align: justify;
 }
@@ -705,22 +754,26 @@ footer {
         transform: rotateX(70deg) rotateZ(630deg);
     }
 }
-.tips{
+
+.tips {
     background-color: #FFF5FF;
     padding: 40px 0px;
-    h3{
+
+    h3 {
         font-size: 32px;
         font-weight: 700;
         color: #222222;
         margin-bottom: 8px;
     }
-    p{
+
+    p {
         font-size: 24px;
         font-weight: 500;
         color: #3C3C3C;
         margin-bottom: 24px;
     }
-    a{
+
+    a {
         height: 56px;
         display: flex;
         align-items: center;
@@ -733,7 +786,8 @@ footer {
         padding: 0px 24px;
         background-color: $main;
         width: fit-content;
-        &:hover{
+
+        &:hover {
             background-color: $white;
             color: $main;
         }
